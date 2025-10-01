@@ -1,0 +1,7 @@
+{
+  "name": "cadiz-experience",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
