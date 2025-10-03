@@ -5,14 +5,10 @@
 </ion-header>
 
 <ion-content>
+
   <div class="card-grid">
-    <app-agrupacion-card
-      *ngFor="let a of agrupaciones"
-      [agrupacion]="a">
+    <app-agrupacion-card *ngFor="let a of agrupaciones" [agrupacion]="a">
     </app-agrupacion-card>
   </div>
+
 </ion-content>
-
-
-
-
