@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { AgrupacionCardComponent } from '../components/agrupacion-card/agrupacion-card.component';
 import { Agrupacion } from '../models/agrupacion';
+import { HeaderComponent } from '../components/header/header.component';
+import { IonContent } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule, AgrupacionCardComponent]
+  imports: [CommonModule, AgrupacionCardComponent, HeaderComponent, IonContent ]
 })
 
 export class HomePage {
@@ -23,7 +24,8 @@ export class HomePage {
       autor: 'Alejandro Pérez Sánchez (Álex el Peluca)',
       anno: 2025,
       img: 'assets/img/agrupaciones/calaita.jpg',
-      fecha_estreno: new Date('2025-01-24')
+      fecha_estreno: new Date('2025-01-24'),
+      destacada: true
     },
     {
       id: 2,
@@ -32,7 +34,8 @@ export class HomePage {
       autor: 'Hermanos Carapapa',
       anno: 2016,
       img: 'assets/img/agrupaciones/chatarras.jpg',
-      fecha_estreno: new Date('2025-01-13')
+      fecha_estreno: new Date('2025-01-13'),
+      destacada: true
     },
     {
       id: 3,
@@ -41,7 +44,8 @@ export class HomePage {
       autor: 'Antonio Martínez Ares',
       anno: 1998,
       img: 'assets/img/agrupaciones/piratas.jpg',
-      fecha_estreno: new Date('1998-01-26')
+      fecha_estreno: new Date('1998-01-26'),
+      destacada: false
     },
     {
       id: 4,
@@ -50,7 +54,8 @@ export class HomePage {
       autor: 'Juan Carlos Aragón',
       anno: 2015,
       img: 'assets/img/agrupaciones/millonarios.jpg',
-      fecha_estreno: new Date('2015-01-19')
+      fecha_estreno: new Date('2015-01-19'),
+      destacada: false
     },
     {
       id: 5,
@@ -59,7 +64,8 @@ export class HomePage {
       autor: 'Juan Manuel Braza Benítez (El Sheriff)',
       anno: 1999,
       img: 'assets/img/agrupaciones/yesterday.jpg',
-      fecha_estreno: new Date('1999-01-18')
+      fecha_estreno: new Date('1999-01-18'),
+      destacada: true
     },
     {
       id: 6,
@@ -68,7 +74,8 @@ export class HomePage {
       autor: 'Faly Pastrana',
       anno: 2009,
       img: 'assets/img/agrupaciones/boda.jpg',
-      fecha_estreno: new Date('2009-01-19')
+      fecha_estreno: new Date('2009-01-19'),
+      destacada: false
     }
   ];
 }

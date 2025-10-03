@@ -12,7 +12,7 @@ import { IonCard, IonCardHeader, IonCardSubtitle, IonCardContent, IonCardTitle }
 })
 export class AgrupacionCardComponent {
 
-  @Input() agrupacion!: Agrupacion;
+  @Input() agrupacion?: Agrupacion;
 
   constructor() { }
 

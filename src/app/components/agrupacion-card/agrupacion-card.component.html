@@ -1,4 +1,4 @@
-<ion-card>
+<ion-card *ngIf="agrupacion" [color] = "agrupacion.destacada ? 'warning' : 'light'">
   <img [src]="agrupacion.img" alt="{{ agrupacion.nombre }}" />
 
   <ion-card-header>
@@ -9,5 +9,11 @@
   <ion-card-content>
     Autor: {{ agrupacion.autor }} <br>
     Estreno: {{ agrupacion.fecha_estreno | date:'longDate':'':'es' }} <br>
+  </ion-card-content>
+</ion-card>
+
+<ion-card *ngIf="!agrupacion">
+  <ion-card-content>
+    ⚠️ No hay datos de agrupación disponibles.
   </ion-card-content>
 </ion-card>

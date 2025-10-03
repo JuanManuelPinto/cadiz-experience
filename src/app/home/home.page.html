@@ -1,10 +1,6 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Cádiz Experience 🎭</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content [fullscreen] class="ion-padding">
+<ion-content>
 
   <div class="card-grid">
     <app-agrupacion-card *ngFor="let a of agrupaciones" [agrupacion]="a">
