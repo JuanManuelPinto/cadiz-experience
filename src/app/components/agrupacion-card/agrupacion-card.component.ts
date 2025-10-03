@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { Agrupacion } from 'src/app/models/agrupacion';
-import { IonicModule } from '@ionic/angular';
 import { CommonModule, DatePipe } from '@angular/common';
+import { IonCard, IonCardHeader, IonCardSubtitle, IonCardContent, IonCardTitle } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-agrupacion-card',
   templateUrl: './agrupacion-card.component.html',
   styleUrls: ['./agrupacion-card.component.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule, DatePipe]
+  imports: [CommonModule, DatePipe, IonCard, IonCardHeader, IonCardSubtitle, IonCardContent, IonCardTitle]
 })
 export class AgrupacionCardComponent {
 
