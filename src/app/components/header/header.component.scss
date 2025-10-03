@@ -1,0 +1,44 @@
+.app-header {
+    ion-toolbar {
+        --background: #2563eb;
+        --color: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .subtitle-toolbar {
+        --background: #f9fafb;
+        --color: #6b7280;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .subtitle {
+        margin: 0;
+        padding: 6px 0;
+    }
+
+    ion-toolbar {
+        --background: #ffffff;
+        --color: #2563eb;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+}
