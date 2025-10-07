@@ -25,7 +25,7 @@ export class HomePage {
       anno: 2018,
       img: 'assets/img/agrupaciones/congo.jpg',
       fecha_estreno: new Date('2018-01-25'),
-      destacada: true
+      premio: true
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export class HomePage {
       anno: 2015,
       img: 'assets/img/agrupaciones/millonarios.jpg',
       fecha_estreno: new Date('2015-01-19'),
-      destacada: true
+      premio: true
     },
     {
       id: 17,
@@ -45,7 +45,7 @@ export class HomePage {
       anno: 2024,
       img: 'assets/img/agrupaciones/colgaos.jpg',
       fecha_estreno: new Date('2024-01-22'),
-      destacada: false
+      premio: false
     },
     {
       id: 1,
@@ -55,7 +55,7 @@ export class HomePage {
       anno: 2025,
       img: 'assets/img/agrupaciones/calaita.jpg',
       fecha_estreno: new Date('2025-01-24'),
-      destacada: true
+      premio: true
     },
     {
       id: 15,
@@ -65,7 +65,7 @@ export class HomePage {
       anno: 2020,
       img: 'assets/img/agrupaciones/chusma_selecta.jpg',
       fecha_estreno: new Date('2020-01-28'),
-      destacada: false
+      premio: false
     },
     {
       id: 8,
@@ -75,7 +75,7 @@ export class HomePage {
       anno: 2007,
       img: 'assets/img/agrupaciones/araka_la_kana.jpg',
       fecha_estreno: new Date('2007-01-20'),
-      destacada: true
+      premio: true
     },
     {
       id: 13,
@@ -85,7 +85,7 @@ export class HomePage {
       anno: 2025,
       img: 'assets/img/agrupaciones/gallinero.webp',
       fecha_estreno: new Date('2025-01-28'),
-      destacada: true
+      premio: true
     },
     {
       id: 18,
@@ -95,7 +95,7 @@ export class HomePage {
       anno: 1992,
       img: 'assets/img/agrupaciones/borrachos.jpg',
       fecha_estreno: new Date('1992-01-27'),
-      destacada: false
+      premio: false
     },
     {
       id: 3,
@@ -105,7 +105,7 @@ export class HomePage {
       anno: 1998,
       img: 'assets/img/agrupaciones/piratas.jpg',
       fecha_estreno: new Date('1998-01-26'),
-      destacada: true
+      premio: true
     },
     {
       id: 10,
@@ -115,7 +115,7 @@ export class HomePage {
       anno: 2016,
       img: 'assets/img/agrupaciones/si_me_pongo_pesao.jpeg',
       fecha_estreno: new Date('2016-01-21'),
-      destacada: true
+      premio: true
     },
     {
       id: 6,
@@ -125,7 +125,7 @@ export class HomePage {
       anno: 2009,
       img: 'assets/img/agrupaciones/boda.jpg',
       fecha_estreno: new Date('2009-01-19'),
-      destacada: false
+      premio: false
     },
     {
       id: 9,
@@ -135,7 +135,7 @@ export class HomePage {
       anno: 2017,
       img: 'assets/img/agrupaciones/irracionales.jpeg',
       fecha_estreno: new Date('2017-01-21'),
-      destacada: true
+      premio: true
     },
     {
       id: 16,
@@ -145,7 +145,7 @@ export class HomePage {
       anno: 2018,
       img: 'assets/img/agrupaciones/perro_andalu.jpeg',
       fecha_estreno: new Date('2018-01-24'),
-      destacada: false
+      premio: false
     },
     {
       id: 2,
@@ -155,7 +155,7 @@ export class HomePage {
       anno: 2012,
       img: 'assets/img/agrupaciones/duendes_coloraos.jfif',
       fecha_estreno: new Date('2012-01-23'),
-      destacada: true
+      premio: true
     },
     {
       id: 7,
@@ -165,7 +165,7 @@ export class HomePage {
       anno: 2016,
       img: 'assets/img/agrupaciones/cobardes.jpeg',
       fecha_estreno: new Date('2016-01-23'),
-      destacada: true
+      premio: true
     },
     {
       id: 14,
@@ -175,7 +175,7 @@ export class HomePage {
       anno: 2025,
       img: 'assets/img/agrupaciones/ku_kux_klan.jpg',
       fecha_estreno: new Date('2025-01-27'),
-      destacada: true
+      premio: true
     },
     {
       id: 12,
@@ -185,7 +185,7 @@ export class HomePage {
       anno: 1996,
       img: 'assets/img/agrupaciones/clase.jpg',
       fecha_estreno: new Date('1996-01-29'),
-      destacada: true
+      premio: true
     },
     {
       id: 5,
@@ -195,7 +195,7 @@ export class HomePage {
       anno: 1999,
       img: 'assets/img/agrupaciones/yesterday.jpg',
       fecha_estreno: new Date('1999-01-18'),
-      destacada: true
+      premio: true
     },
   ];
 }

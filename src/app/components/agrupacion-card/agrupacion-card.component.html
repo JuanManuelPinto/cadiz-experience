@@ -1,10 +1,17 @@
 <ion-card *ngIf="agrupacion" class="agrupacion-card">
-  <img [src]="agrupacion.img" alt="{{ agrupacion.nombre }}" class="agrupacion-img"/>
+  <ion-badge
+    *ngIf="agrupacion"
+    [color]="agrupacion.premio ? 'warning' : 'light'"
+    class="premio-badge">
+    {{ agrupacion.premio ? '⭐ 1º Premio' : 'Sin Premio' }}
+  </ion-badge>
+
+  <img [src]="agrupacion.img" alt="{{ agrupacion.nombre }}"
+    class="agrupacion-img" />
 
   <ion-card-header>
     <ion-card-title>
       {{ agrupacion.nombre }}
-      <ion-badge *ngIf="agrupacion.destacada" color="warning" class="ml-2">⭐ Destacada</ion-badge>
     </ion-card-title>
     <ion-card-subtitle>
       {{ agrupacion.modalidad }} - {{ agrupacion.anno }}
@@ -14,7 +21,8 @@
   <ion-card-content>
     <ion-text color="dark">
       <p><strong>Autor:</strong> {{ agrupacion.autor }}</p>
-      <p><strong>Estreno:</strong> {{ agrupacion.fecha_estreno | date:'longDate':'':'es' }}</p>
+      <p><strong>Estreno:</strong> {{ agrupacion.fecha_estreno |
+        date:'longDate':'':'es' }}</p>
     </ion-text>
   </ion-card-content>
 </ion-card>

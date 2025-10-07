@@ -7,5 +7,5 @@ export interface Agrupacion
     anno: number;
     img: string;
     fecha_estreno: Date;
-    destacada: boolean;
+    premio: boolean;
 }
