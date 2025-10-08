@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { AgrupacionCardComponent } from '../components/agrupacion-card/agrupacion-card.component';
 import { Agrupacion } from '../models/agrupacion';
 import { HeaderComponent } from '../components/header/header.component';
-import { IonContent } from '@ionic/angular/standalone';
+import { IonContent, IonGrid, IonRow, IonCol } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [CommonModule, AgrupacionCardComponent, HeaderComponent, IonContent]
+  imports: [CommonModule, AgrupacionCardComponent, HeaderComponent, IonContent, IonGrid, IonRow, IonCol]
 })
 
 export class HomePage {
