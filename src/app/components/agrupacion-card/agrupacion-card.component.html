@@ -1,7 +1,7 @@
 <ion-card *ngIf="agrupacion" class="agrupacion-card">
   <ion-badge
     *ngIf="agrupacion"
-    [color]="agrupacion.premio ? 'warning' : 'light'"
+    [color]="agrupacion.premio ? 'tertiary' : 'light'"
     class="premio-badge">
     {{ agrupacion.premio ? '⭐ 1º Premio' : 'Sin Premio' }}
   </ion-badge>
