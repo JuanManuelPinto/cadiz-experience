@@ -1,12 +1,14 @@
 <app-header></app-header>
 
-<ion-content>
+<ion-content color="light">
 
   <ion-grid>
     <ion-row class="ion-align-items-center">
-        <ion-col size="12" size-md="6" size-lg="4" *ngFor="let a of agrupaciones">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" size-md="6" size-lg="4" size-xl="3" *ngFor="let a of agrupaciones">
           <app-agrupacion-card [agrupacion]="a"></app-agrupacion-card>
         </ion-col>
+      </ion-row>
     </ion-row>
   </ion-grid>
 

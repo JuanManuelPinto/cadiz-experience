@@ -1,19 +1,17 @@
-<ion-card *ngIf="agrupacion" class="agrupacion-card">
-  <ion-badge
-    *ngIf="agrupacion"
-    [color]="agrupacion.premio ? 'tertiary' : 'light'"
-    class="premio-badge">
+<ion-card *ngIf="agrupacion" color="light" class="agrupacion-card">
+
+  <ion-badge *ngIf="agrupacion" [color]="agrupacion.premio ? 'secondary' : 'medium'" class="premio-badge">
     {{ agrupacion.premio ? '⭐ 1º Premio' : 'Sin Premio' }}
   </ion-badge>
 
-  <img [src]="agrupacion.img" alt="{{ agrupacion.nombre }}"
-    class="agrupacion-img" />
+  <ion-img [src]="agrupacion.img" alt="{{ agrupacion.nombre }}" class="agrupacion-img">
+  </ion-img>
 
   <ion-card-header>
-    <ion-card-title>
+    <ion-card-title color="primary">
       {{ agrupacion.nombre }}
     </ion-card-title>
-    <ion-card-subtitle>
+    <ion-card-subtitle color="medium">
       {{ agrupacion.modalidad }} - {{ agrupacion.anno }}
     </ion-card-subtitle>
   </ion-card-header>
@@ -21,14 +19,19 @@
   <ion-card-content>
     <ion-text color="dark">
       <p><strong>Autor:</strong> {{ agrupacion.autor }}</p>
-      <p><strong>Estreno:</strong> {{ agrupacion.fecha_estreno |
-        date:'longDate':'':'es' }}</p>
+      <p><strong>Estreno:</strong> {{ agrupacion.fecha_estreno | date:'longDate':'':'es' }}</p>
     </ion-text>
+
+    <ion-button color="primary" expand="block" fill="outline" shape="round" size="small">
+      <ion-icon name="eye-outline"></ion-icon>Ver detalles
+    </ion-button>
   </ion-card-content>
 </ion-card>
 
-<ion-card *ngIf="!agrupacion" class="agrupacion-card empty">
+<ion-card *ngIf="!agrupacion" color="light" class="agrupacion-card empty">
   <ion-card-content>
-    ⚠️ No hay datos de agrupación disponibles.
+    <ion-text color="warning">
+      ⚠️ No hay datos de agrupación disponibles.
+    </ion-text>
   </ion-card-content>
 </ion-card>
